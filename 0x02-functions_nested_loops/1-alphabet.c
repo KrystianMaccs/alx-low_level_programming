@@ -2,8 +2,9 @@
 
 /**
  * print_alphabet - This program prints out the alphabet
- * the alphabet from a - z
- * 
+ *
+ * from a - z
+ *
  * return: 0
  *
  */
