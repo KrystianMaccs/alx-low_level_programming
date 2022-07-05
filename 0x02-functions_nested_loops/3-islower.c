@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * is_lower - this program prints the alphabet
+ * _islower - if the character is lowercase
+ * @c: is the int that will use for the argument of the function
  *
- * in lower case
  *
- * Return: 0
+ * Return: 1 if lowercase character 0 if not
  */
 
 int _islower(int c)
