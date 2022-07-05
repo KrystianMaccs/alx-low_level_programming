@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * Description - Entry point
- * Return: 0 Always (Success)
+ * _isalpha - checks if the argument is an alphabet
+ * @c: is the int that will use for the argument of the function
+ * Return: 1 if alphabet; 0 if not
  */
 int _isalpha(int c)
 {
