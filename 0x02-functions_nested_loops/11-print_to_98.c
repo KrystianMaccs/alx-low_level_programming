@@ -2,8 +2,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return: 0 Always (Success)
+ *print_to_98 - prints all natural numbers from n to 98
+ @n: integer argument
+
+ * Return: void
  */
 void print_to_98(int n)
 {

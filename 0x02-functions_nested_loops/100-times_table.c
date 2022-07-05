@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * times table - this function prints times table of numbers greater than 0, 
- * and not greater than 15
+ * print_times_table - prints a multiplication table to param
+ * @n: The number to be multiplied
+ *
+ * Return: Number matrix
  */
 
 void print_times_table(int n)

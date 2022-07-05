@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * Return: 0 Always (Success)
+ * print_last_digit - prints the last digit of a number
+ * @n: is the int that we will use for the function argument
+ *
+ * Return: integer value
  */
 int print_last_digit(int n)
 {
