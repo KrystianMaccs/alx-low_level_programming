@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * lower alphabet - this programs prints letters in lower case
- * Return: 0 Always (Success)
+ * islower - this programs prints the alphabet in lower case
+ * Return: 0
  */
 int _islower(int c)
 {
