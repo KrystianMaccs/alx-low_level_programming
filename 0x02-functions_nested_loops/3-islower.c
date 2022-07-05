@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * islower - this programs prints the alphabet in lower case
+ * is_lower - this programs prints the alphabet in lower case
  *
  * Return: 0
  */
+
 int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
