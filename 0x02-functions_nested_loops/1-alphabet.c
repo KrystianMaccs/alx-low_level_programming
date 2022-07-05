@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * print alphabet - This program prints the alphabet from a - z
- * Return: 0 
+ * prints alphabet - this program prints 
+ * the alphabet from a - z
+ * Return 0
  */
 
 void print_alphabet(void)
@@ -13,7 +14,6 @@ void print_alphabet(void)
 	{
 		_putchar(c);
 		c++;
-
 	}
 	_putchar('\n');
 }
