@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * lower alphabet - this programs prints letters in lower case
  * Return: 0 Always (Success)
  */
 int _islower(int c)
