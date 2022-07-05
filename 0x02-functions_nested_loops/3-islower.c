@@ -2,6 +2,7 @@
 
 /**
  * islower - this programs prints the alphabet in lower case
+ *
  * Return: 0
  */
 int _islower(int c)
