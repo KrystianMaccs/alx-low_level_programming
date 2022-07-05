@@ -1,7 +1,13 @@
-nclude <stdio.h>
+nclude "holberton.h"
 
 /**
  * main - Entry point
  * Return: 0 Always (Success)
  */
-int main(void)
+int _isalpha(int c)
+{
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+		return (1);
+	else
+		return (0);
+}
