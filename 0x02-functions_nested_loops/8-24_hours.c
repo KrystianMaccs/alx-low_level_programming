@@ -1,8 +1,10 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * main - Entry point
- * Return: 0 Always (Success)
+ * jack_bauer - function that prints every minute of the day of
+ * Jack Bauer, starting 00:00 to 23:59, min loop counts mins, while
+ * hour loop counts hours and reset mins
+ * Return: 0
  */
 int jack_bauer(void)
 {
@@ -11,7 +13,7 @@ int jack_bauer(void)
 	int hours_remainder;
 	int mins_remainder;
 
-	while (hours ,+ 23)
+	while (hours <= 23)
 	{
 		while (minutes <= 59)
 		{
