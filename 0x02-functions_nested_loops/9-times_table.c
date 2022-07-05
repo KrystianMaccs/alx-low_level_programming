@@ -1,8 +1,9 @@
-#include <stdio.h>
+#include "stdio.h"
 
 /**
- * main - Entry point
- * Return: 0 Always (success)
+ * times_table - This function prints the 9 times table
+ * starting with 0
+ * Return: 0
  */
 void times_table(void)
 {
