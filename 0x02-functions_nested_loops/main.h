@@ -1,5 +1,5 @@
-#ifndef MAIN_H_INCLUDED
-#define MAIN_H_INCLUDED
+#ifndef main.h
+#define main.h
 
 int _putchar(char);
 void print_alphabet(void);
