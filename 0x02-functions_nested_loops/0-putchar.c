@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - A program that prints
@@ -7,6 +7,6 @@
  */
 int main(void)
 {
-	printf("__putchar\n");
+	printf("_putchar\n");
 	return (0);
 }
