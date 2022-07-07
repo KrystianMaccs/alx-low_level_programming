@@ -1,33 +1,25 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
- * main - prime numbers
- *
- * Return: always 0
+ * main - prime_number
+ * Return: 0
  */
 
 int main(void)
 {
-	unsigned int long n = 612852475143, max = -1;
-	int i;
+	long num = 612852475143;
+	long divisor = 2;
+	long large_prime = 0;
 
-	while (n % 2 == 0)
+	while (num != 1)
 	{
-		max = 2;
-		n = n / 2;
-	}
-	for (i = 3; i <= sqrt(n); i = i + 2)
-	{
-		while (n % i == 0)
+		if (num % divisor == 0)
 		{
-			max = i;
-			n = n / i;
+			num = num / divisor;
+			large_prime = divisor;
 		}
+		divisor += 1;
 	}
-	if (n > 2)
-	{
-		max = n;
-	}
-	printf("%lu\n", max);
+	printf("%ld\n", large_prime);
 	return (0);
+}
