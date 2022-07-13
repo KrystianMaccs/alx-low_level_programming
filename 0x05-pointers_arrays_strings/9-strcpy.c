@@ -1,19 +1,21 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
 
 /**
- * strcpy - this function copies the string pointed to
- * by src 8ncluding the terminating null byte to the buffer
+ * _strcpy - this function copies the string pointed to
+ * by src including the terminating null byte to the buffer
  * pointed to by dest
  *
- * @a: pointer to char
- * @n: number of elements to be printed
+ * @dest: destination
+ * @src: source
  *
- * Return: char
+ * Return: dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	strcpy(dest, src);
 
-	for (i = 0; i  
+	return (dest);
+}
