@@ -1,25 +1,60 @@
 #include "main.h"
 
 /**
+ * separator - checks if character is a separator
+ * @c: character to be checked
+ * Return: if separator return 1. Otherwise resturn 0;
+ */
+
+int separator(char c)
+{
+	/*Declaring condition switch*/
+	switch (c)
+	{
+		case ' ':
+		case '\t':
+		case '\n':
+		case ',':
+		case ';':
+		case '.':
+		case '!':
+		case '?':
+		case '"':
+		case '(':
+		case ')':
+		case '{':
+		case '}':
+			return (1);
+
+		default:
+			return (0);
+	}
+}
+
+/**
  * *cap_string - function
- * @str: pointer
+ * @s: pointer
  * Return: pointer to function
  */
 
-char *cap_string(char *str)
+char *cap_string(char *s)
 {
-	int symb[14] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
-	int i, j;
+	int count, upper;
 
-	for (i = 0; str[i] != '\0'; i++)
+	upper = -32; /*value constant*/
+
+	count = 0;
+	/*start WHILE*/
+	while (s[count] != '\0')
 	{
-		if (str[0] >= 97 && str[0] <= 122)
+		/*letters lowercase*/
+		if (s[count] >= 'a' && s[count] <= 'z')
 		{
-			str[0] = str[0] - 32;
+			/*convert uppercase*/
+			if (s[count] == *s || separator(s[count - 1]))
+				s[count] += upper;
 		}
-		for (j = 0; j < 14; j++)
-			if (str[i] >= 97 && str[i] <= 122 && str[i - 1] == symb[j])
-				str[i] = str[i] - 32;
+		count++; /*Add count*/
 	}
-	return (str);
+	return (s);
 }
