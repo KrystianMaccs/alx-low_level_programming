@@ -4,10 +4,9 @@
 /**
  * _memset - fill memory with constant byte
  * @s: pointer to char
- * @b: a parameter
+ * @b: parameter b
  * @i: number of bytes
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
 	return (memset(s, b, n));
