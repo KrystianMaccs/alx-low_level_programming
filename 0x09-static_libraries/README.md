@@ -1,1 +1,1 @@
-This repository takes the concept of static libraries.
+This repository contains solutions to the static libraries tasks.
