@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - function
+ * @argc: length of argv
+ * @argv: number of argument
+ * Return: Always 0
+ */
+
+int main(int argc, char *argc[])
+{
+	/* Declaring varibales */
+	int position, total, change, aux;
+
+	int coints[] = {25, 10, 5, 2, 1}; /* Array int */
+	position = total = change = aux = 0;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		return (0);
+	}
+	total = atoi(argv[1]); /* convert str to int */
+	if (total <= 0)
+	{
+		printf("0\n");
+		return (0);
+	}
+
+	/* While loop declaration */
+	while (coins[position] != '\0')
+	{
+		if (total >= coins[position])
+		{
+			aux = (total / coins[position]);
+			change += aux;
+			total -= coins[position] * aux;
+		}
+		position++;
+	}
+	printf("%d\n", change);
+	return (0);
+}
