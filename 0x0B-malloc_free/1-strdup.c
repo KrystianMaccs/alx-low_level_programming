@@ -5,9 +5,8 @@
 /**
  * _strdup - string duplicator function
  * @str: string to be duplicated
- * Return: a string pointer
+ * Return: a string pointer and NULL if string is NULL
  *
- * Return: NULL if str in NULL
  * pointer to duplicated string on success
  * NULL if memory was insufficient
  */
