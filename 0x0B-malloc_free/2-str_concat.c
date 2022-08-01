@@ -8,7 +8,7 @@
  * @s1: pointer to string
  * @s2: pointer to string
  *
- * Return: pointer to allocated memory which has 
+ * Return: pointer to allocated memory which has
  * s1, s2 and null byte
  * NULL on failure
  */
