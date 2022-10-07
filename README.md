@@ -1,1 +1,1 @@
-A repository for low level programming
+this file harbors solution to the dynamic library task
